@@ -1,0 +1,77 @@
+\documentclass[cover]{isas-seminar}
+
+\usepackage{subfigure}
+\usepackage{booktabs}
+
+\eventtype{Seminar} 
+
+
+\seminartitle{Forschungsprojekt Anthropomatik praktisch erfahren}
+
+\title{Kinect Punktwolken in die Unreal Engine importieren}
+\author{Marius Wodtke}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+%Hier eine kommt die Zusammenfassung
+%todo
+\end{abstract}
+\clearpage
+\tableofcontents
+\cleardoublepage
+
+\section{Einleitung}
+Technische Entwicklungen wie \textit{head-mounted displays} haben die Erfahrung der Telepräsenz in den letzten Jahren deutlich verbessert. Aber um sich an einem entfernten beziehungsweise virtuellen Ort wirklich anwesend zu fühlen reicht es nicht die Bewegung des Nutzers korrekt zu übersetzen. Zusätzlich muss die Welt und die Personen in ihr passend dargestellt werden. In einer ausgedachten Umgebung mag dies nur eine Frage der möglichen Grafikqualität sein, will man jedoch einen realen Ort mit echten Menschen abbilden fallen dem Nutzer viel schneller Ungenauigkeiten und Unstimmigkeiten auf. Optimal wäre es die Welt und ihre Personen nicht designen zu müssen, sondern sie originalgetreu zu digitalisieren. Ein wichtiges Werkzeug dazu ist die Kinect Kamera von Microsoft, diese bietet Sensoren um die Welt und ihre Menschen zu scannen und so zu digitalisieren, nun müssen die Daten nur noch sinnvoll interpretiert und nutzbar gemacht werden.
+
+\section{Aufgabenstellung}
+Aufgabe soll es sein, die von der Kinect ausgegebenen Streams in die frei verfügbare Unreal Engine zu importieren und sie so für weitere Aufgaben nutzbar zu machen. Zusätzlich soll eine dieser Aufgaben Fokus dieser Arbeit sein - die Zusammenführung von Farb- und Tiefeninformation zu einer Punktwolke, die die reale Welt in die virtuelle Welt abbilden soll. 
+
+\section{Microsoft Kinect}
+Die Kinect von Microsoft bietet einen Tiefensensor, eine RGB-Kamera, einen Infrarotsensor und mehrere Mikrofone. Kombiniert man Tiefensensor und RGB-Kamera kann man eine Punktwolke erzeugen, dazu müssen die Pixel des Kamerabildes entlang der Tiefeninformation in den 3-dimensionalen Raum projeziert werden. \\
+Die dazugehörige Software ermöglicht noch viele andere Interpretationsarten der gelieferten Bilder, zum Beispiel kann sie ein Knochenmodell von Personen vor der Kamera berechnen, diese können dann in Avatare umgesetzt werden, die die Bewegungen der Personen kopieren.
+
+\section{Kinect 4 Windows v2.0 Plugin}
+Das Kinect 4 Windows v2.0 Plugin ermöglicht es die verschiedenen Input Streams der Kinect in die Unreal Engine zu importieren. Das Plugin setzt dabei bereits eine funktionierende Kinect voraus, es müssen zunächst die \textit{Kinect Runtime} (\url{https://www.microsoft.com/en-us/download/details.aspx?id=44559}) und die \textit{Kinect SDK} (\url{https://www.microsoft.com/en-us/download/details.aspx?id=44561}) installiert werden. \\
+Anschließend sollte die Kinect getestet werden, dazu kann der \textit{PCViewer} des ISAS verwendet werden. Zunächst wird der Server (\textit{PCViewer}) und anschließend der Client (\textit{Holodeck}) gestartet, nun sollte die Kinect im Menu des Servers erscheinen und es können die \textit{Color-} und \textit{Depth-Streams} aktiviert werden. Sieht man nun eine Punktwolke, die dem Blickwinkel der Kamera entspricht, funktioniert alles wie vorgesehen.\\
+
+\section{Projektmappe erstellen}
+Zunächst klont man das GitHub Projekt KinectDemoRoom (\url{https://github.com/lion03/KinectDemoRoom}). Nach einem Rechtsklick auf die .uprojekt Datei muss zunächst die Version 4.9 der Unreal Engine ausgewählt werden, danach können im selben Menu die Projektdateien erstellt und eigentlich auch kompilliert werden, letzteres schlägt aber fehl und es müssen einige Kompilerfehler von Hand behoben werden. \\
+Zum einen muss die \textit{UK2Node_BaseAsyncTask} in \textit{xy} bekannt gemacht werden, es muss eine Zeile \textit{include} im Dateikopf hinzugefügt werden. 
+Zum anderen muss im \textit{KinectV2Module} für die \textit{PrivateDependencyModuleNames} und \textit{PublicDependencyModuleNames} der Eintrag \textit{"UnrealEd"} hinzugefügt werden, weiteres zum dem Problem ist unter \url{https://github.com/lion03/KinectDemoRoom/issues/1} zu finden.\\
+
+\section{Die Demo Umgebung}
+Nachdem die Projektmappe erfolgreich erstellt wurde sollte sich die .uproject Datei öffnen lassen und der Unreal Editor öffnet sich. Die Demo Umgebung besteht aus mehreren kleinen Räumen, die die Grundfunktionalität des Plugins präsentieren. Dazu gehört das Auslesen der Input Streams wie Farbe, Tiefe und Infrarot, außerdem trennt der \textit{Body ID} Stream Personen vom Hintergrund und das \textit{Bone Model} zeigt eine visuelle Repräsentation des berechneten Knochenmodells. Eine Implementierung für die Darstellung einer Punktwolke ist noch nicht vorhanden. \\
+
+\section{Blueprint}
+Zu Spielbeginn muss zunächst die Kinect gestartet werden, wichtig auch sie bei Spielende wieder abzuschalten, sonst läuft sie die ganze Zeit. Wenn sie gestartet wurde können \textit{Event Dispatcher} angelegt werden, an die passende Events gebunden werden. Diese liefern bei jedem ankommenden Bild der Kinect ein Ereignis und das Bild als Textur zurück, diese lässt sich gut auf Flächen projezieren, die Projektion auf einzelne Pixel gestaltet sich schwieriger. \\
+Um das Farbbild hierfür nutzbar zu machen muss die Textur in ein Array mit \textit{LinearColor} Werten umgewandelt werden, die Werte des Arrays können dann einzeln ausgelesen und als Pixelfarben gesetzt werden. Eine Funktion zur Umwandlung stellt der Unreal Editor nicht zur Verfügung, sie muss als C++ Funktion hinzugefügt werden, dies wird aber in einem gesonderten Abschnitt behandelt. Ähnliches gilt für die Tiefeninformation, die ebenfalls als Textur kodiert werden. \\
+Sind die Farb- und Tiefeninformationen eines Frames in Arrays verpackt kann man beginnen die Punktwolke zu erzeugen.
+
+\section{Erweiterungen des Plugins}
+
+\section{Projektion in den dreidimensionalen Raum}
+
+\section{Fazit}
+%
+
+%So werden Bilder eingebunden (als pdf, jpg oder png)
+%\begin{figure}[ht]
+%  \centering
+%  \caption{Hier kommen weitere Erklärungen zum Bild}
+% \label{fig:autorname_bild1}
+%\end{figure}
+%
+% Auf diese Abbildung wird dann mit Abb. \ref{fig:autorname_bild1} verwiesen.
+
+\newpage 
+\bibliographystyle{plain}
+
+\begin{thebibliography}{99}
+
+\bibitem{bib:russel_norvig} {\sc S. Russel and P. Norvig }  \textit{Artificial Intelligence - A Modern Approach},
+Second Edition, Prentice Hall, 2003.
+
+\end{thebibliography}
+\end{document}
