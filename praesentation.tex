@@ -9,7 +9,7 @@
 \institute{Seminar: Anthropomatik praktisch erfahren}
 
 % Infos über die Präsentation
-\title[Kinect Point Cloud tu UE4]{Kinect Point Cloud to Unreal Engine 4}
+\title[Kinect Point Cloud to UE4]{Kinect Point Cloud to Unreal Engine 4}
 \subtitle{}
 \author{Marius Wodtke}
 \date{22. Juli 2016}
@@ -206,7 +206,7 @@ $
 	\begin{itemize}
 		\item Nun an jede 3D Position einen farbigen Pixel zeichnen
 		\item Dabei schwarze Pixel und Pixel ohne Tiefe auslassen
-		\item \movie[externalviewer]{Video}{img/PCViewerVid.WMV}
+		\item \movie[externalviewer]{Video}{img/KinectCloudVid.WMV}
 	\end{itemize}
 	\begin{center}
 		\includegraphics[height=0.37\paperheight]{img/Cloud}
@@ -216,18 +216,15 @@ $
 
 \begin{frame}
 	\frametitle{Implementierte Methoden und Fazit} 
-	\begin{itemize}
-		\item Nun an jede 3D Position einen farbigen Pixel zeichnen
-		\item Dabei schwarze Pixel und Pixel ohne Tiefe auslassen
-		\item \movie[externalviewer]{Video}{img/KinectCloudVid.WMV}
-	\end{itemize}
 	\begin{center}
 		\includegraphics[height=0.37\paperheight]{img/AllFunctionsBP}
 	\end{center}
 	\begin{itemize}
+		\item Erfolgreiche Übertragung!
+		\item Funktionierender Prototyp
 		\item Überraschend viele Umwandlungen notwendig
-		\item Performancekritische Aufgabe
-
+		\item Performancekritische Aufgabe $\Rightarrow$ Optimierungspotential
+		\item Zeichnen sehr aufwändig $\Rightarrow$ verwenden von Particles
 	\end{itemize}
 \end{frame}
 
