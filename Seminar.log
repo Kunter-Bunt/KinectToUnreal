@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  13 JUL 2016 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  23 JUL 2016 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,94 +837,160 @@ LaTeX Info: Redefining \nameref on input line 28.
 \@outlinefile=\write3
 \openout3 = `Seminar.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
+Underfull \hbox (badness 2781) in paragraph at lines 40--47
+[]\T1/ptm/m/n/10 Technische Ent-wick-lun-gen wie \T1/ptm/m/it/10 head-mounted d
+is-plays
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 40--47
+\T1/ptm/m/n/10 deut-lich ver-bes-sert. Aber um sich an ei-nem ent-fern-ten
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 40--47
+\T1/ptm/m/n/10 reicht es nicht die Be-we-gung des Nut-zers kor-rekt zu
+ []
+
+
+Underfull \hbox (badness 4072) in paragraph at lines 40--47
+\T1/ptm/m/n/10 schnel-ler ein-satz-be-reit. Da-bei ist es mög-lich aus den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+\T1/ptm/m/n/10 auf-ge-nom-me-nen Bil-dern wie-der ei-ne drei-di-men-sio-na-le
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 40--47
+\T1/ptm/m/n/10 Punkt-wol-ke er-zeugt wer-den und so der Nut-zer in der
+ []
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 40--47
+\T1/ptm/m/n/10 vir-tu-el-len Welt dar-ge-stellt wer-den kann. Wer-den die
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 50--53
+\T1/ptm/m/n/10 dort soll aus dem Tie-fen-bild und dem Farb-bild ei-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+\T1/ptm/m/n/10 drei-di-men-sio-na-le Punkt-wol-ke er-zeugt wer-den. Da-bei
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 50--53
+\T1/ptm/m/n/10 als Vor-be-rei-tung für die in der Ein-lei-tung mo-ti-vier-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2443) in paragraph at lines 50--52
+Underfull \hbox (badness 2443) in paragraph at lines 64--68
 \T1/ptm/m/n/10 ver-schie-de-nen In-put Stre-ams der Ki-nect in die Un-re-al
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 50--52
+Underfull \hbox (badness 2894) in paragraph at lines 64--68
 \T1/ptm/m/n/10 En-gi-ne zu im-por-tie-ren. Das Plu-gin setzt da-bei be-reits
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 50--52
+Underfull \hbox (badness 1472) in paragraph at lines 64--68
 \T1/ptm/m/n/10 ei-ne funk-tio-nie-ren-de Ki-nect vor-aus, es müs-sen zu-nächst
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
 \T1/ptm/m/n/10 die \T1/ptm/m/it/10 Ki-nect Run-ti-me \T1/ptm/m/n/10 ([]$https :
  / / www . microsoft . com / en-[]us /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
 \T1/ptm/m/n/10 / / www . microsoft . com / en-[]us / download / details . aspx 
 ? id = 44561$[])
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 50--52
+Underfull \hbox (badness 2478) in paragraph at lines 64--68
 \T1/ptm/m/n/10 ge-st-ar-tet, nun soll-te die Ki-nect im Me-nu des Ser-vers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
 
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 54--57
+Underfull \hbox (badness 4872) in paragraph at lines 70--73
 \T1/ptm/m/n/10 ([]$https : / / github . com / lion03 / KinectDemoRoom$[]). Nach
  ei-nem
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 54--57
-\T1/ptm/m/n/10 Zum einen muss die \T1/ptm/m/it/10 UK2Node_BaseAsyncTask \T1/ptm
-/m/n/10 in \T1/ptm/m/it/10 xy
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
+\T1/ptm/m/n/10 Zum an-de-ren muss im \T1/ptm/m/it/10 Ki-nectV2Module \T1/ptm/m/
+n/10 für die
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 54--57
-\T1/ptm/m/n/10 Da-tei-kopf hin-zu-ge-fügt wer-den. Zum an-de-ren muss im
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
+\T1/ptm/m/it/10 Pri-va-te-De-pen-den-cy-Mo-du-leN-a-mes \T1/ptm/m/n/10 und \T1/
+ptm/m/it/10 Pu-blic-De-pen-den-
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 54--57
-\T1/ptm/m/it/10 Ki-nectV2Module \T1/ptm/m/n/10 für die \T1/ptm/m/it/10 Pri-va-t
-e-De-pen-den-cy-Mo-du-leN-a-mes
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
+\T1/ptm/m/it/10 cy-Mo-du-leN-a-mes \T1/ptm/m/n/10 der Ein-trag \T1/ptm/m/it/10 
+"Un-rea-lEd" \T1/ptm/m/n/10 hin-zu-ge-fügt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
+\T1/ptm/m/n/10 wer-den, wei-te-res zum dem Pro-blem ist un-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
 []$\T1/ptm/m/n/10 https : / / github . com / lion03 / KinectDemoRoom / issues /
  1$[] zu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 59--60
+Underfull \hbox (badness 1558) in paragraph at lines 75--79
 \T1/ptm/m/n/10 vi-su-el-le Re-prä-sen-ta-ti-on des be-rech-ne-ten Kno-chen-mo-d
 ells.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
 
  []
 
@@ -932,25 +998,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
 
 ]
+Underfull \hbox (badness 1430) in paragraph at lines 89--96
+\T1/ptm/m/n/10 Das \T1/ptm/m/it/10 e-installation \T1/ptm/m/n/10 Pro-jekt be-nu
+tzt den PCView-er be-reits
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 89--96
+\T1/ptm/m/n/10 die Funk-tio-nen zum Aus-le-sen ei-ner Ki-nect noch nicht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--106
+
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 107--108
+[]\T1/ptm/m/n/10 in ein einen zwei-di-men-sio-na-len Pi-xel und ei-ne Tie-fe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--157
+
+ []
+
 No file Seminar.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
  (./Seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
 Package rerunfilecheck Info: File `Seminar.out' has not changed.
-(rerunfilecheck)             Checksum: 52727EB5D113ACF7C54E7195AB10BDEF;540.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
+(rerunfilecheck)             Checksum: 8CB20828EC57B44031C7C1A5DB309055;577.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 9097 strings out of 493029
- 137617 string characters out of 6136235
- 238905 words of memory out of 5000000
- 12517 multiletter control sequences out of 15000+600000
+ 9099 strings out of 493029
+ 137639 string characters out of 6136235
+ 236905 words of memory out of 5000000
+ 12518 multiletter control sequences out of 15000+600000
  106516 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,40p,987b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,530b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -963,10 +1089,10 @@ y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on Seminar.pdf (2 pages, 118783 bytes).
+Output written on Seminar.pdf (2 pages, 120208 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 14 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
