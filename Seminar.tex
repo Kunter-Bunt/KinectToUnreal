@@ -105,7 +105,9 @@ f_u & 0 & c_u  \\
 0 & 0 & 1  
 \end{bmatrix}$\\[1cm]
 
-in ein einen zweidimensionalen Pixel und eine Tiefe $[u,v,\gamma]^T$ transformiert. Dabei bezeichnen $f_u$ und $f_v$ die Fokuslänge und $c_u$ und $c_v$ den Hauptpunkt. Ein Punkt des Tiefenbildes berechnet sich also aus \\[1cm]
+	in ein einen zweidimensionalen Pixel und eine Tiefe $[u,v,\gamma]^T$ transformiert. 
+	Dabei bezeichnen $f_u$ und $f_v$ die Fokuslänge und $c_u$ und $c_v$ den Hauptpunkt. 
+	Ein Punkt des Tiefenbildes berechnet sich also aus \\[1cm]
 
 $\begin{bmatrix}
 u \\
@@ -124,7 +126,8 @@ y_2 \\
 y_3
 \end{bmatrix}$\\[1cm]
 
-Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1,y_2,y_3]^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden [Zitierung Florian]. Die Formel lautet \\[1cm]
+	Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1,y_2,y_3]^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden [Zitierung Florian].
+	Die Formel lautet \\[1cm]
 
 $\begin{bmatrix}
 y'_1 \\
@@ -139,16 +142,16 @@ y'_3
 \times
 \gamma$.\\[1cm]
 
-Der berechnete Punkt ist relativ zum Ursprung. Wenn nur eine Kinect benutzt wird ist dies kein Problem, man verschiebt einfach den Ursprung in der Unreal Engine um die Punktwolke an die gewüschnte Position zu bekommen. Sollen aber mehrere Kinects zum Einsatz kommen müssen die Kameras in Position und Rotation koordiniert werden, dazu kann die extrinsische Matrix $E$ definiert werden. \\[1cm]
+	Der berechnete Punkt ist relativ zum Ursprung. 
+	Wenn nur eine Kinect benutzt wird ist dies kein Problem, man verschiebt einfach den Ursprung in der Unreal Engine um die Punktwolke an die gewüschnte Position zu bekommen. 
+	Sollen aber mehrere Kinects zum Einsatz kommen müssen die Kameras in Position und Rotation koordiniert werden, dazu kann die extrinsische Matrix $E$ definiert werden. \\[1cm]
 
 $\begin{bmatrix}
 y_1 \\
 y_2 \\
 y_3
 \end{bmatrix}
-= \begin{bmatrix}
-E
-\end{bmatrix}
+= E
 \times
 \begin{bmatrix}
 y'_1 \\
@@ -157,8 +160,22 @@ y'_3
 \end{bmatrix}$\\[1cm]
 
 \section{Zeichenfunktionen}
-blub
-
+	Nach der Berechnung der Positionen muss nur noch ein Punkt an jede davon gezeichnet werden. 
+	Die Unreal Engine bietet mit {\textit{Draw Debug Point}} eine einfache Methode um farbige Punkte an festgelegte dreidimensionale Positionen zu zeichnen, leider ist sie eher für sporadische und nicht für massenhafte Verwendung ausgelegt. 
+	Auf dem Referenzrechner werden nur wenige Millionen Punkte pro Sekunde gezeichnet. 
+	Eine Kinect kann allerdings 30 Bilder pro Sekunde liefern, das ergibt bei gut 270.000 Pixeln pro Bild (512x424) mehr als 8 Millionen Pixel pro Sekunde. 
+	Einige davon können eingespart werden, Pixel, deren Tiefe nicht richtig erkannt wurde werden nicht aus der Kamera herausprojeziert, sie müssen nicht gezeichnet werden. 
+	Hinzu kommen Pixel, bei denen die Farbe nicht erkannt wurde, sie säumen zumeist die korrekt erkannten Bereiche und erzeugen einen schwarzen Rand. 
+	Auch sie werden übersprungen um Zeichenoperationen zu sparen. 
+	Dies hebt die anzeigbare Bildrate auf eine einigermaßen flüssige Darstellung - aber nur für eine Kinect. 
+	Um mehrere Kinect gleichzeitig zu verarbeiten braucht es deshalb eine andere Zeichenfunktion.
+	Dies wurde bereits im Unreal Forum diskutiert ({\url{https://forums.unrealengine.com/showthread.php?74704-Trying-to-implement-LIDAR-Point-Cloud-graphic-features-new-to-UE4-and-game-engines}}).
+	Die Verwendung von soliden Objekten wie etwa Würfeln hat zwar den Vorteil, dass sie nicht immer wieder neu erzeugt werden müssen, man kann sie einfach versetzen und die Oberfläche neu färben. 
+	Allerdings besitzen dreidimensionale Objekte im Gegensatz zu Punkten mehrere Oberflächen die gerendert werden müssen, dies frisst die Vorteile wieder auf.
+	{\textit{Particles}} in einem {\textit{Particle System}} können sehr performant erzeugt werden. 
+	Sie sollten sich auch für die Darstellung mehrerer Kinect eignen, allerdings werden die Particles kollektiv kontrolliert und nicht einzeln gesetzt. 
+	Um sie also zu nutzen, müsste man sich eine Methode überlegen, die Particles mit kollektiver Kontrolle die Punktwolke bilden zu lassen und sie in den richtigen Farben darzustellen. 
+	
 
 \section{Fazit}
 
