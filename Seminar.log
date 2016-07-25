@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  25 JUL 2016 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  25 JUL 2016 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,78 +728,109 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip51
 )
+(/usr/share/texlive/texmf-dist/tex/latex/breakurl/breakurl.sty
+Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count124
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 48.
+
+)
+
+! LaTeX Error: Option clash for package hyperref.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 
+     
+? 
 (./Seminar.aux)
 \openout1 = `Seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 28.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 35.
 
 -- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
+\scratchcounter=\count125
 \scratchdimen=\dimen158
 \scratchbox=\box30
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count127
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count128
 \MPscratchDim=\dimen159
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -819,7 +850,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -827,293 +858,333 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./Seminar.out) (./Seminar.out)
 \@outlinefile=\write3
 \openout3 = `Seminar.out'.
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 40--47
+Underfull \hbox (badness 2781) in paragraph at lines 52--59
 []\T1/ptm/m/n/10 Technische Ent-wick-lun-gen wie \T1/ptm/m/it/10 head-mounted d
 is-plays
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 40--47
+Underfull \hbox (badness 2119) in paragraph at lines 52--59
 \T1/ptm/m/n/10 deut-lich ver-bes-sert. Aber um sich an ei-nem ent-fern-ten
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 40--47
+Underfull \hbox (badness 2617) in paragraph at lines 52--59
 \T1/ptm/m/n/10 reicht es nicht die Be-we-gung des Nut-zers kor-rekt zu
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 40--47
+Underfull \hbox (badness 4072) in paragraph at lines 52--59
 \T1/ptm/m/n/10 schnel-ler ein-satz-be-reit. Da-bei ist es mög-lich aus den
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--47
+Underfull \hbox (badness 10000) in paragraph at lines 52--59
 \T1/ptm/m/n/10 auf-ge-nom-me-nen Bil-dern wie-der ei-ne drei-di-men-sio-na-le
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 40--47
+Underfull \hbox (badness 2103) in paragraph at lines 52--59
 \T1/ptm/m/n/10 Punkt-wol-ke er-zeugt wer-den und so der Nut-zer in der
  []
 
 
-Underfull \hbox (badness 7576) in paragraph at lines 40--47
+Underfull \hbox (badness 7576) in paragraph at lines 52--59
 \T1/ptm/m/n/10 vir-tu-el-len Welt dar-ge-stellt wer-den kann. Wer-den die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--47
+Underfull \hbox (badness 10000) in paragraph at lines 52--59
 
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 50--53
+Underfull \hbox (badness 3417) in paragraph at lines 62--65
 \T1/ptm/m/n/10 dort soll aus dem Tie-fen-bild und dem Farb-bild ei-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 \T1/ptm/m/n/10 drei-di-men-sio-na-le Punkt-wol-ke er-zeugt wer-den. Da-bei
  []
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 50--53
+Underfull \hbox (badness 4505) in paragraph at lines 62--65
 \T1/ptm/m/n/10 als Vor-be-rei-tung für die in der Ein-lei-tung mo-ti-vier-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 2443) in paragraph at lines 65--69
+Underfull \hbox (badness 7796) in paragraph at lines 68--75
+[]\T1/ptm/m/n/10 Die Ki-nect wur-de ur-sprüng-lich von Mi-cro-soft für
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 68--75
+\T1/ptm/m/n/10 Ap-pli-ka-tio-nen ent-wi-ckeln, die die Ki-nect nut-zen. Als
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 68--75
+\T1/ptm/m/n/10 da-zu müs-sen die Pi-xel des Ka-me-ra-bil-des ent-lang der
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 68--75
+\T1/ptm/m/n/10 In-ter-pre-ta-ti-ons-ar-ten der ge-lie-fer-ten Bil-der, zum Bei-
+spiel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--75
+
+ []
+
+<img/Kinectv2.png, id=52, 803.0pt x 504.88625pt>
+File: img/Kinectv2.png Graphic file (type png)
+ <use img/Kinectv2.png>
+Package pdftex.def Info: img/Kinectv2.png used on input line 78.
+(pdftex.def)             Requested size: 258.0pt x 162.22173pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 78--79
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 85--89
 \T1/ptm/m/n/10 ver-schie-de-nen In-put Stre-ams der Ki-nect in die Un-re-al
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 65--69
-\T1/ptm/m/n/10 En-gi-ne zu im-por-tie-ren. Das Plu-gin setzt da-bei be-reits
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 65--69
-\T1/ptm/m/n/10 ei-ne funk-tio-nie-ren-de Ki-nect vor-aus, es müs-sen zu-nächst
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
-\T1/ptm/m/n/10 die \T1/ptm/m/it/10 Ki-nect Run-ti-me \T1/ptm/m/n/10 ([]$https :
- / / www . microsoft . com / en-[]us /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
-\T1/ptm/m/n/10 / / www . microsoft . com / en-[]us / download / details . aspx 
-? id = 44561$[])
- []
-
-
-Underfull \hbox (badness 2478) in paragraph at lines 65--69
+Underfull \hbox (badness 2478) in paragraph at lines 85--89
 \T1/ptm/m/n/10 ge-st-ar-tet, nun soll-te die Ki-nect im Me-nu des Ser-vers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
-
- []
-
-
-Underfull \hbox (badness 4872) in paragraph at lines 71--74
-\T1/ptm/m/n/10 ([]$https : / / github . com / lion03 / KinectDemoRoom$[]). Nach
- ei-nem
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-\T1/ptm/m/n/10 Zum an-de-ren muss im \T1/ptm/m/it/10 Ki-nectV2Module \T1/ptm/m/
-n/10 für die
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-\T1/ptm/m/it/10 Pri-va-te-De-pen-den-cy-Mo-du-leN-a-mes \T1/ptm/m/n/10 und \T1/
-ptm/m/it/10 Pu-blic-De-pen-den-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-\T1/ptm/m/it/10 cy-Mo-du-leN-a-mes \T1/ptm/m/n/10 der Ein-trag \T1/ptm/m/it/10 
-"Un-rea-lEd" \T1/ptm/m/n/10 hin-zu-ge-fügt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-\T1/ptm/m/n/10 wer-den, wei-te-res zum dem Pro-blem ist un-ter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-[]$\T1/ptm/m/n/10 https : / / github . com / lion03 / KinectDemoRoom / issues /
- 1$[] zu
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 76--80
-\T1/ptm/m/n/10 vi-su-el-le Re-prä-sen-ta-ti-on des be-rech-ne-ten Kno-chen-mo-d
-ells.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--80
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Underfull \hbox (badness 1430) in paragraph at lines 90--97
+ <./img/Kinectv2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
+
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 97--101
+\T1/ptm/m/n/10 vi-su-el-le Re-prä-sen-ta-ti-on des be-rech-ne-ten Kno-chen-mo-d
+ells.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
+
+ []
+
+<img/Kinect4Windows.PNG, id=68, 1093.08376pt x 327.47343pt>
+File: img/Kinect4Windows.PNG Graphic file (type png)
+
+<use img/Kinect4Windows.PNG>
+Package pdftex.def Info: img/Kinect4Windows.PNG used on input line 104.
+(pdftex.def)             Requested size: 258.0pt x 77.29105pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 104--105
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 118--125
 \T1/ptm/m/n/10 Das \T1/ptm/m/it/10 e-installation \T1/ptm/m/n/10 Pro-jekt be-nu
 tzt den PCView-er be-reits
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 90--97
+Underfull \hbox (badness 2269) in paragraph at lines 118--125
 \T1/ptm/m/n/10 die Funk-tio-nen zum Aus-le-sen ei-ner Ki-nect noch nicht
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--97
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
+
+ []
+
+<img/CloudPCViewer.PNG, id=70, 602.25pt x 433.62pt>
+File: img/CloudPCViewer.PNG Graphic file (type png)
+
+<use img/CloudPCViewer.PNG>
+Package pdftex.def Info: img/CloudPCViewer.PNG used on input line 128.
+(pdftex.def)             Requested size: 258.0pt x 185.76485pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 128--129
+ [][] 
+ []
+
+<img/Cloud.PNG, id=71, 967.36406pt x 545.03625pt>
+File: img/Cloud.PNG Graphic file (type png)
+ <use img/Cloud.PNG>
+Package pdftex.def Info: img/Cloud.PNG used on input line 135.
+(pdftex.def)             Requested size: 516.0pt x 290.73907pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 141.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 141.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
+
+ []
+
+[2 <./img/Kinect4Windows.PNG> <./img/CloudPCViewer.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--107
-
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 108--111
+Underfull \hbox (badness 1484) in paragraph at lines 149--152
 []\T1/ptm/m/n/10 in ein einen zwei-di-men-sio-na-len Pi-xel und ei-ne Tie-fe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--128
+Underfull \hbox (badness 10000) in paragraph at lines 153--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--144
+Underfull \hbox (badness 10000) in paragraph at lines 173--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--148
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--161
+Underfull \hbox (badness 10000) in paragraph at lines 190--202
+
+ []
+
+<img/AllFunctionsBP.PNG, id=85, 755.82375pt x 225.84375pt>
+File: img/AllFunctionsBP.PNG Graphic file (type png)
+
+<use img/AllFunctionsBP.PNG>
+Package pdftex.def Info: img/AllFunctionsBP.PNG used on input line 205.
+(pdftex.def)             Requested size: 464.39685pt x 138.76384pt.
+
+Underfull \hbox (badness 2119) in paragraph at lines 211--226
+\T1/ptm/m/n/10 zu spa-ren. Dies hebt die an-zeig-ba-re Bildra-te auf ei-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--178
-\T1/ptm/m/n/10 dis-ku-tiert ([]$https : / / forums . unrealengine . com / showt
-hread . php ?
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./img/Cloud.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 231--238
+[]\T1/ptm/m/n/10 Die für die-se Aus-ar-bei-tung an-ge-fer-tig-te Pro-to-typ
  []
 
 
-Overfull \hbox (156.3563pt too wide) in paragraph at lines 163--178
-\T1/ptm/m/n/10 74704-[]Trying-[]to-[]implement-[]LIDAR-[]Point-[]Cloud-[]graphi
-c-[]features-[]new-[]to-[]UE4-[]and-[]game-[]engines$[]).
+Underfull \hbox (badness 2626) in paragraph at lines 231--238
+\T1/ptm/m/n/10 Stre-ams in die Un-re-al En-gi-ne zu im-por-tie-ren und zu
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 163--178
-\T1/ptm/m/n/10 meh-re-rer Ki-nect eig-nen, al-ler-dings wer-den die Par-tic-les
+Underfull \hbox (badness 1742) in paragraph at lines 231--238
+\T1/ptm/m/n/10 ver-ar-bei-ten dürf-te je-doch we-gen der ver-wen-de-ten \T1/ptm
+/m/it/10 Draw
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--238
 
  []
 
-[2]
-No file Seminar.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-[3
+<img/2DColor.PNG, id=102, 729.47531pt x 426.09187pt>
+File: img/2DColor.PNG Graphic file (type png)
+ <use img/2DColor.PNG>
+Package pdftex.def Info: img/2DColor.PNG used on input line 241.
+(pdftex.def)             Requested size: 258.0pt x 150.69478pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 241--242
+ [][] 
+ []
+
+(./Seminar.bbl [4 <./img/AllFunctionsBP.PNG> <./img/2DColor.PNG>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
+ [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
- (./Seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
+
+(./Seminar.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `Seminar.out' has not changed.
-(rerunfilecheck)             Checksum: 8CB20828EC57B44031C7C1A5DB309055;577.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+(rerunfilecheck)             Checksum: 4CD0129F8364C230A8878FD87E2DDB9F;623.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
- 9100 strings out of 493029
- 137645 string characters out of 6136235
- 241905 words of memory out of 5000000
- 12518 multiletter control sequences out of 15000+600000
- 106516 words of font info for 111 fonts, out of 8000000 for 9000
+ 9419 strings out of 493029
+ 142401 string characters out of 6136235
+ 243843 words of memory out of 5000000
+ 12784 multiletter control sequences out of 15000+600000
+ 110752 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,40p,530b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,77p,374b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on Seminar.pdf (3 pages, 122843 bytes).
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on Seminar.pdf (5 pages, 2372755 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
