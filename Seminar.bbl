@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{ITM07_BrunnSawo}
+Dietrich Brunn, Felix Sawo, and Uwe~D. Hanebeck.
+\newblock {M}odellbasierte {V}ermessung verteilter {P}h{\"a}nomene und
+  {G}enerierung optimaler {M}esssequenzen.
+\newblock {\em tm - Technisches Messen, Oldenbourg Verlag}, 3:75--90, March
+  2007.
+
+\bibitem{lidar}
+jumi1174.
+\newblock {Trying to implement LIDAR / Point Cloud graphic features}.
+\newblock
+  \url{https://forums.unrealengine.com/showthread.php?74704-Trying-to-implement-LIDAR-Point-Cloud-graphic-features-new-to-UE4-and-game-engines},
+  2015.
+\newblock [Online; accessed 15-July-2016].
+
+\bibitem{kinectruntime}
+Microsoft.
+\newblock {Kinect for Windows Runtime}.
+\newblock \url{https://www.microsoft.com/en-us/download/details.aspx?id=44559},
+  2014.
+\newblock [Online; accessed 15-July-2016].
+
+\bibitem{kinectsdk}
+Microsoft.
+\newblock {Kinect for Windows SDK 2.0}.
+\newblock \url{https://www.microsoft.com/en-us/download/details.aspx?id=44561},
+  2014.
+\newblock [Online; accessed 15-July-2016].
+
+\bibitem{k4w}
+Leon Rosengarten.
+\newblock {Kinect 4 Windows v2.0 Plugin}.
+\newblock \url{https://github.com/lion03/KinectDemoRoom}, 2015.
+\newblock [Online; accessed 15-July-2016].
+
+\bibitem{k4wissues}
+Leon Rosengarten.
+\newblock {Kinect 4 Windows v2.0 Plugin: Issues}.
+\newblock \url{https://github.com/lion03/KinectDemoRoom/issues/1}, 2015.
+\newblock [Online; accessed 15-July-2016].
+
+\end{thebibliography}
