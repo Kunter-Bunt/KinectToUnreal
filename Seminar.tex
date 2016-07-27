@@ -65,13 +65,13 @@
 
 
 \section{Microsoft Kinect}
-	Die Kinect wurde ursprünglich von Microsoft für die Xbox 360 entwickelt bietet eine RGB-Kamera, einen Infrarotprojektor, eine Infrarotkamera und mehrere Mikrofone, sie wurde Ende 2010 veröffentlicht. 
+	Die Kinect wurde ursprünglich von Microsoft für die Xbox 360 entwickelt bietet eine Farbkamera, einen Infrarotprojektor, eine Infrarotkamera und mehrere Mikrofone, sie wurde Ende 2010 veröffentlicht (siehe Abb. \ref{Kinectv2}). 
 	Gut ein Jahr später veröffentlichte Microsoft aber ein \textit{Software Development Kit}, zusammen mit einem Adapter kann man unter Windows Applikationen entwickeln, die die Kinect nutzen.
 	Als Einschränkung gilt aber jederzeit, dass der Treiber nur eine Kinect pro Rechner verarbeitet.
 	Wichtig für diese Arbeit ist, dass Infrarotprojektor und Infrarotkamer zusammen einen Tiefensensor bilden. 
-	Kombiniert man diesen Tiefensensor und RGB-Kamera kann man eine Punktwolke erzeugen, dazu müssen die Pixel des Kamerabildes entlang der Tiefeninformation in den 3-dimensionalen Raum projeziert werden. \\
+	Kombiniert man diesen Tiefensensor und Farbkamera kann man eine Punktwolke erzeugen, dazu müssen die Pixel des Kamerabildes entlang der Tiefeninformation in den dreidimensionalen Raum projeziert werden. \\
 	Die dazugehörige Software ermöglicht noch viele andere Interpretationsarten der gelieferten Bilder, zum Beispiel kann sie ein Knochenmodell von Personen vor der Kamera berechnen, diese können dann in Avatare umgesetzt werden, die die Bewegungen der Personen kopieren.
-	Für diese Arbeit wird die Kinect v2.0 verwendet \\[0.5cm]
+	Für diese Arbeit wird die Kinect v2.0 verwendet. \\[0.5cm]
 	
 	\begin{figure}[!h]
     	\centering
@@ -90,36 +90,39 @@
 
 \section{Projektmappe erstellen}
 	Zunächst klont man das GitHub Projekt KinectDemoRoom {\cite{k4w}}. 
-	Nach einem Rechtsklick auf die .uprojekt Datei muss zunächst die Version 4.9 der Unreal Engine ausgewählt werden, danach können im selben Menu die Projektdateien erstellt und eigentlich auch kompilliert werden, letzteres schlägt aber fehl und es müssen ein Kompilerfehler von Hand behoben werden. \\
-	Zum anderen muss im {\textit{KinectV2Module}} für die {\textit{PrivateDependencyModuleNames}} und {\textit{PublicDependencyModuleNames}} der Eintrag {\textit{"{}UnrealEd"{}}} hinzugefügt werden, weiteres zum dem Problem ist in den Issues {\cite{k4wissues}} zu finden.\\
+	Nach einem Rechtsklick auf die .uprojekt Datei muss zunächst die Version 4.9 der Unreal Engine ausgewählt werden, danach können im selben Menu die Projektdateien erstellt und eigentlich auch kompilliert werden, letzteres schlägt aber fehl und es muss ein Kompilerfehler von Hand behoben werden. \\
+	Dazu muss muss das Projekt in Visual Studio geöffnet werden (.sln Datei) und  im {\textit{KinectV2Module}} für die {\textit{PrivateDependencyModuleNames}} und {\textit{PublicDependencyModuleNames}} der Eintrag {\textit{"{}UnrealEd"{}}} hinzugefügt werden, weiteres zu dem Problem ist in den Issues {\cite{k4wissues}} zu finden.\\
 
 \section{Die Demo Umgebung}
-	Nachdem die Projektmappe erfolgreich erstellt wurde sollte sich die .uproject Datei öffnen lassen und der Unreal Editor öffnet sich. 
+	Nachdem die Projektmappe erfolgreich erstellt wurde sollte sich die .uproject Datei öffnen lassen und der Unreal Editor startet. 
 	Die Demo Umgebung besteht aus mehreren kleinen Räumen, die die Grundfunktionalität des Plugins präsentieren. 
-	Dazu gehört das Auslesen der Input Streams wie Farbe, Tiefe und Infrarot, außerdem trennt der {\textit{Body ID}} Stream Personen vom Hintergrund und das {\textit{Bone Model}} zeigt eine visuelle Repräsentation des berechneten Knochenmodells. 
+	Dazu gehört das Auslesen der Input Streams wie Farbe, Tiefe und Infrarot (Abb. \ref{Kinect4Windows}), außerdem trennt der {\textit{Body ID}} Stream Personen vom Hintergrund und das {\textit{Bone Model}} zeigt eine visuelle Repräsentation des berechneten Knochenmodells. 
 	Eine Implementierung für die Darstellung einer Punktwolke ist noch nicht vorhanden. \\[0.5cm]
 	
 	\begin{figure}[!h]
     	\centering
 		\includegraphics[width=0.5\textwidth]{img/Kinect4Windows}
-	    \caption{Die Kinect 4 Windows Demo Umgebung, es werden Farb und Tiefenbild visualisiert.}
+	    \caption{Die Kinect 4 Windows Demo Umgebung, es werden Farb- und Tiefenbild visualisiert.}
     	\label{Kinect4Windows}
 	\end{figure}
 
 \section{Blueprint}
-	Zu Spielbeginn muss zunächst die Kinect gestartet werden, wichtig auch sie bei Spielende wieder abzuschalten, sonst läuft sie die ganze Zeit. 
+	Zu Spielbeginn muss zunächst die Kinect gestartet werden, wichtig ist auch sie bei Spielende wieder abzuschalten, sonst läuft sie die ganze Zeit. 
 	Wenn sie gestartet wurde können {\textit{Event Dispatcher}} angelegt werden, an die passende Events gebunden werden. 
 	Diese liefern bei jedem ankommenden Bild der Kinect ein Ereignis und das Bild als Textur zurück, diese lässt sich gut auf Flächen projezieren, die Projektion auf einzelne Pixel gestaltet sich schwieriger. \\
-	Um das Farbbild hierfür nutzbar zu machen muss die Textur in ein Array mit {\textit{LinearColor}} Werten umgewandelt werden, die Werte des Arrays können dann einzeln ausgelesen und als Pixelfarben gesetzt werden. 
-	Eine Funktion zur Umwandlung stellt der Unreal Editor nicht zur Verfügung, sie muss als C++ Funktion hinzugefügt werden, dies wird aber in einem gesonderten Abschnitt behandelt. Ähnliches gilt für die Tiefeninformation, die ebenfalls als Textur kodiert werden. \\
+	Um das Farbbild hierfür nutzbar zu machen muss die Textur in ein Array mit {\textit{LinearColor}} Werten umgewandelt werden, die Werte des Arrays können dann einzeln ausgelesen und als Pixelfarben gesetzt werden (siehe Abb. \ref{2DColor}). 
+	Eine Funktion zur Umwandlung stellt der Unreal Editor nicht zur Verfügung, sie muss als C++ Funktion hinzugefügt werden . Ähnliches gilt für die Tiefeninformation, die ebenfalls als Textur kodiert werden. \\
 	Sind die Farb- und Tiefeninformationen eines Frames in Arrays verpackt kann man beginnen die Punktwolke zu erzeugen.
+	Bei diesem Plugin besteht aber immer das Problem, dass das Plugin direkt mit dem Treiber zusammen arbeitet, es kann also immer nur eine Kinect ausgelesen werden. 
+	Dies ist im Zusammenhang der Motivation nicht sinnvoll, da mindestens zwei Kameras auf gegenüberliegenden Seiten verwendet werden müssen um ein vollständiges dreidimensionales Modell eines Körpers zu erhalten.
+	Das Plugin wurde daraufhin zugunsten des PCViewers verworfen.
 
 \section{PCViewer}
 	Der {\textit{PCViewer}} ist eine Applikation des Isas, sie spaltet sich in einen Client und einen Server. 
 	Ein Client kann die Bilder der Kinect auslesen und diese über das Netzwerk an den Server verschicken. 
 	Der Server empfängt die Daten und kann diese auch für andere Anwendungen bereitstellen.
 	Mit diesem System können mehrere Kinects verarbeitet werden, dabei muss natürlich nach wie vor jede Kinect an einen eigenen Rechner angeschlossen werden, aber nun besteht die Möglichkeit, alle auf einem zentralen Rechner zu nutzen.
-	Der PCViewer kann außerdem in der graphischen Oberfläche bereits Punktwolken anzeigen, dies wird als Referenz für die korrekte Darstellung in der Unreal Engine dienen. \\
+	Der PCViewer kann außerdem in der graphischen Oberfläche bereits Punktwolken anzeigen, dies wird als Referenz für die korrekte Darstellung in der Unreal Engine dienen (vgl. Abb. \ref{CloudPCViewer} und Abb. \ref{Cloud}). \\
 	Das {\textit{e-installation}} Projekt benutzt den PCViewer bereits in Kombination mit der Unreal Engine, allerdings um das verwendete {\textit{head-mounted display}} auszulesen. 
 	Deshalb sind die Funktionen zum Auslesen einer Kinect noch nicht implementiert, sie müssen genauso wie die Berechnung der Punktwolke hinzugefügt werden. \\[0.5cm]
 	
@@ -146,15 +149,17 @@ f_u & 0 & c_u  \\
 0 & 0 & 1  
 \end{bmatrix}$\\[1cm]
 
-	in ein einen zweidimensionalen Pixel und eine Tiefe $[u,v,\gamma]^T$ transformiert. 
+	in ein einen zweidimensionalen Pixel und eine Tiefe $[u,v,1]^T \times \gamma$ transformiert. 
 	Dabei bezeichnen $f_u$ und $f_v$ die Fokuslänge und $c_u$ und $c_v$ den Hauptpunkt. 
 	Ein Punkt des Tiefenbildes berechnet sich also aus \\[1cm]
 
 $\begin{bmatrix}
 u \\
 v \\
-\gamma
+1
 \end{bmatrix}
+\times
+\gamma
 = \begin{bmatrix}
 f_u & 0 & c_u  \\
 0 & f_v & c_v  \\
@@ -167,7 +172,7 @@ y_2 \\
 y_3
 \end{bmatrix}$\\[1cm]
 
-	Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1,y_2,y_3]^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden [Zitierung Florian] \cite{ITM07_BrunnSawo}.
+	Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1',y_2',y_3']^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden [Zitierung Florian] \cite{ITM07_BrunnSawo}.
 	Die Formel lautet \\[1cm]
 
 $\begin{bmatrix}
@@ -211,8 +216,9 @@ y'_3
 	Nach der Berechnung der Positionen muss nur noch ein Punkt an jede davon gezeichnet werden. 
 	Die Unreal Engine bietet mit {\textit{Draw Debug Point}} eine einfache Methode um farbige Punkte an festgelegte dreidimensionale Positionen zu zeichnen, leider ist sie eher für sporadische und nicht für massenhafte Verwendung ausgelegt. 
 	Auf dem Referenzrechner werden nur wenige Millionen Punkte pro Sekunde gezeichnet. 
-	Eine Kinect kann allerdings 30 Bilder pro Sekunde liefern, das ergibt bei gut 270.000 Pixeln pro Bild (512x424) mehr als 8 Millionen Pixel pro Sekunde. 
-	Einige davon können eingespart werden, Pixel, deren Tiefe nicht richtig erkannt wurde werden nicht aus der Kamera herausprojeziert, sie müssen nicht gezeichnet werden. 
+	Eine Kinect kann allerdings 30 Bilder pro Sekunde liefern, das ergibt bei 217.088 Pixeln pro Bild (512x424) mehr als 6,5 Millionen Pixel pro Sekunde. 
+	Einige davon können eingespart werden. 
+	Pixel, deren Tiefe nicht richtig erkannt wurde werden nicht aus der Kamera herausprojeziert, sie müssen nicht gezeichnet werden. 
 	Hinzu kommen Pixel, bei denen die Farbe nicht erkannt wurde, sie säumen zumeist die korrekt erkannten Bereiche und erzeugen einen schwarzen Rand. 
 	Auch sie werden übersprungen um Zeichenoperationen zu sparen. 
 	Dies hebt die anzeigbare Bildrate auf eine einigermaßen flüssige Darstellung - aber nur für eine Kinect. 
