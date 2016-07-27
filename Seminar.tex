@@ -41,7 +41,7 @@
 \begin{abstract}
 	Die Immersion ist ein wichtiger Aspekt für den Reiz von virtuellen Welten. \\
 	Aktuelle VR Systeme haben große Fortschritte bei der Anzeige der Welt selbst gemacht, der eigentliche Nutzer ist in ihr aber oft ein Fremdkörper.\\
-	Die mangelnde Fähigkeit den Nutzer insgesamt zu erfassen führt dazu, dass er zu einem Augenpaar mit dazugehörigen Händen wird. \\
+	Die mangelnde Fähigkeit den Nutzer insgesamt zu erfassen führt dazu, dass er zu einem Augenpaar und einem Paar Händen wird. \\
 	Technologien wie die Kinect erlauben es jedoch den Nutzer als Ganzes zu erfassen, sie soll genutzt werden, damit der Nutzer sich selbst und andere in der virtuellen Welt sehen kann.\\
 	Diese Arbeit soll in Vorbereitung darauf einen Prototyp erstellen, der die Bilder einer Kinect in die Unreal Engine importiert und sie dort zu einer Punktwolke verarbeiten und anzeigen soll.\\
 	Er ist für eine Kinect voll funktionsfähig, für die Verarbeitung mehrerer aber nicht leistungsfähig genug.\\
@@ -123,6 +123,13 @@
 	    \caption{Die Ansicht einer Punktwolke im Point Cloud Viewer.}
     	\label{CloudPCViewer}
 	\end{figure}
+	
+		\begin{figure*}[!h]
+    	\centering
+		\includegraphics[width=\textwidth]{img/Cloud}
+	    \caption{Das Ergebnis der Integration einer Punktwolke in die Unreal Engine.}
+    	\label{Cloud}
+	\end{figure*} 
 
 \section{PCViewer}
 	Der {\textit{PCViewer}} ist eine Applikation des Isas, sie spaltet sich in einen Client und einen Server. \\
@@ -135,12 +142,7 @@
 	
 
 
-	\begin{figure*}[t]
-    	\centering
-		\includegraphics[width=\textwidth]{img/Cloud}
-	    \caption{Das Ergebnis der Integration einer Punktwolke in die Unreal Engine.}
-    	\label{Cloud}
-	\end{figure*} 
+
 \section{Projektion in den dreidimensionalen Raum}
 	Während die Kameras der Kinect einen konischen Bereich aus der Welt aufzeichnen, bilden sie diesen natürlich auf ein zweidimensionales Bild ab. \\
 	Dabei wird jeder dreidimensionale Punkt $[y_1,y_2,y_3]^T$ mit der intrinsischen Kamera-Matrix \\ [1cm]
@@ -207,12 +209,14 @@ y'_2 \\
 y'_3
 \end{bmatrix}$\\[1cm]
 
-	\begin{figure*}[t]
+\begin{figure}[!h]
     	\centering
-		\includegraphics[width=0.9\textwidth]{img/AllFunctionsBP}
-	    \caption{Die für den Prototypen entwickelten Funktionen. {\textit{Get Extrinsic}} wurde bereits vom e-installation Projekt implementiert.}
-    	\label{AllFunctionsBP}
-	\end{figure*}
+		\includegraphics[width=0.5\textwidth]{img/2DColor}
+	    \caption{Die Anzeige des Farbildes mit der {\textit{Draw Debug Point}} Funktion. Für zweidimensionale Anzeigen sollten Texturen verwendet werden, dies ist deutlich effizienter.}
+    	\label{2DColor}
+	\end{figure} 
+	
+
 
 \section{Zeichenfunktionen}
 	Nach der Berechnung der Positionen muss nur noch ein Punkt an jede davon gezeichnet werden. \\
@@ -242,14 +246,15 @@ y'_3
 	Die in der Aufgabenstellung bezeichnete Aufgabe wurde also erfüllt, bezogen auf die Motivation sind aber noch Anpassungen des Prototyps notwendig.\\
 	Um der flüssigen Anzeige eines Körpers in der VR zu genügen muss dieser nämlich von mehreren Kinect von verschiedenen Seiten aufgenommen - und verarbeitet - werden. v
 	Die resultierende Größe der Punktwolke ist für diesen Prototyp zu viel, er könnte sie nur wenige Male pro Sekunde zeichnen. \\
-	Hohe Bildraten sind in der virtuellen Realität aber wichtig, damit der Nutzer sich in ihr präsent fühlt und nicht an der Simulatorkrankheit leidet. \\[0.5cm]
+	Hohe Bildraten sind in der virtuellen Realität aber wichtig, damit der Nutzer sich in ihr präsent fühlt und nicht an der Simulatorkrankheit leidet. \\
+	Alle für diese Arbeit implementierten Methoden finden sie noch einmal in Abb. \ref{AllFunctionsBP} aufgelistet.\\[0.5cm]
 	
-	\begin{figure}[!h]
+		\begin{figure*}[!h]
     	\centering
-		\includegraphics[width=0.5\textwidth]{img/2DColor}
-	    \caption{Die Anzeige des Farbildes mit der {\textit{Draw Debug Point}} Funktion. Für zweidimensionale Anzeigen sollten Texturen verwendet werden, dies ist deutlich effizienter.}
-    	\label{2DColor}
-	\end{figure} 
+		\includegraphics[width=0.9\textwidth]{img/AllFunctionsBP}
+	    \caption{Die für den Prototypen entwickelten Funktionen. {\textit{Get Extrinsic}} wurde bereits vom {\textit{e-installation}} Projekt implementiert.}
+    	\label{AllFunctionsBP}
+	\end{figure*}
 	
 
 
