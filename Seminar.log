@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  27 JUL 2016 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  8 AUG 2016 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,27 +967,22 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 104--105
  []
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 110--119
-\T1/ptm/m/n/10 wer-den . Ähn-li-ches gilt für die Tie-fen-in-for-ma-ti-on, die
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--119
+Underfull \hbox (badness 10000) in paragraph at lines 110--120
 \T1/ptm/m/n/10 da min-des-tens zwei Ka-me-ras auf ge-gen-über-lie-gen-den
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 110--119
+Underfull \hbox (badness 2846) in paragraph at lines 110--120
 \T1/ptm/m/n/10 Sei-ten ver-wen-det wer-den müs-sen um ein voll-stän-di-ges
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 110--119
+Underfull \hbox (badness 2828) in paragraph at lines 110--120
 \T1/ptm/m/n/10 Das Plu-gin wur-de dar-auf-hin zu-guns-ten des PCView-ers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--119
+Underfull \hbox (badness 10000) in paragraph at lines 110--120
 
  []
 
@@ -995,148 +990,150 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--119
 File: img/CloudPCViewer.PNG Graphic file (type png)
 
 <use img/CloudPCViewer.PNG>
-Package pdftex.def Info: img/CloudPCViewer.PNG used on input line 122.
+Package pdftex.def Info: img/CloudPCViewer.PNG used on input line 123.
 (pdftex.def)             Requested size: 258.0pt x 185.76485pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 122--123
+Overfull \hbox (6.0pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
 <img/Cloud.PNG, id=74, 967.36406pt x 545.03625pt>
 File: img/Cloud.PNG Graphic file (type png)
  <use img/Cloud.PNG>
-Package pdftex.def Info: img/Cloud.PNG used on input line 129.
+Package pdftex.def Info: img/Cloud.PNG used on input line 130.
 (pdftex.def)             Requested size: 516.0pt x 290.73907pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 135--142
+Underfull \hbox (badness 1755) in paragraph at lines 136--143
 \T1/ptm/m/n/10 Mit die-sem Sys-tem kön-nen meh-re-re Ki-nects ver-ar-bei-tet
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 135--142
+Underfull \hbox (badness 1430) in paragraph at lines 136--143
 \T1/ptm/m/n/10 Das \T1/ptm/m/it/10 e-installation \T1/ptm/m/n/10 Pro-jekt be-nu
 tzt den PCView-er be-reits
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--142
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
 
  []
 
 [2 <./img/Kinect4Windows.PNG> <./img/CloudPCViewer.PNG>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--155
+Underfull \hbox (badness 10000) in paragraph at lines 151--156
 
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 156--159
+Underfull \hbox (badness 1484) in paragraph at lines 157--160
 []\T1/ptm/m/n/10 in ein einen zwei-di-men-sio-na-len Pi-xel und ei-ne Tie-fe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--178
+Underfull \hbox (badness 10000) in paragraph at lines 161--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--194
+Underfull \hbox (badness 10000) in paragraph at lines 183--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
  []
 
-
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [3 <./img/Cloud.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 199--211
+[3 <./img/Cloud.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 200--212
 
  []
 
 <img/2DColor.PNG, id=106, 729.47531pt x 426.09187pt>
 File: img/2DColor.PNG Graphic file (type png)
  <use img/2DColor.PNG>
-Package pdftex.def Info: img/2DColor.PNG used on input line 214.
+Package pdftex.def Info: img/2DColor.PNG used on input line 215.
 (pdftex.def)             Requested size: 258.0pt x 150.69478pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 214--215
+Overfull \hbox (6.0pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 222--238
+Underfull \hbox (badness 2922) in paragraph at lines 223--239
 \T1/ptm/m/n/10 zu Punk-ten meh-re-re Ober-flä-chen die ge-ren-dert wer-den
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 222--238
+Underfull \hbox (badness 6575) in paragraph at lines 223--239
 \T1/ptm/m/n/10 über-le-gen, die Par-tic-les mit kol-lek-ti-ver Kon-trol-le die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--238
+Underfull \hbox (badness 10000) in paragraph at lines 223--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--251
+Underfull \hbox (badness 10000) in paragraph at lines 244--252
 []\T1/ptm/m/n/10 Die für die-se Aus-ar-bei-tung an-ge-fer-tig-te Pro-to-typ
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 243--251
+Underfull \hbox (badness 2626) in paragraph at lines 244--252
 \T1/ptm/m/n/10 Stre-ams in die Un-re-al En-gi-ne zu im-por-tie-ren und zu
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 243--251
+Underfull \hbox (badness 2088) in paragraph at lines 244--252
 \T1/ptm/m/n/10 wer-den, denn die Ver-ar-bei-tung ist sehr auf-wän-dig und
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 243--251
+Underfull \hbox (badness 1521) in paragraph at lines 244--252
 \T1/ptm/m/n/10 die Bil-der in Blue-prints zu ver-ar-bei-ten führt zu ei-nem
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 243--251
+Underfull \hbox (badness 2837) in paragraph at lines 244--252
 \T1/ptm/m/n/10 ver-schie-de-nen Sei-ten auf-ge-nom-men - und ver-ar-bei-tet -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--251
+Underfull \hbox (badness 2189) in paragraph at lines 244--252
+\T1/ptm/m/n/10 Die re-sul-tie-ren-de Grö-ÿe der Punkt-wol-ke ist für die-sen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--252
 
  []
 
@@ -1144,34 +1141,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--251
 File: img/AllFunctionsBP.PNG Graphic file (type png)
 
 <use img/AllFunctionsBP.PNG>
-Package pdftex.def Info: img/AllFunctionsBP.PNG used on input line 254.
+Package pdftex.def Info: img/AllFunctionsBP.PNG used on input line 255.
 (pdftex.def)             Requested size: 464.39685pt x 138.76384pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./Seminar.bbl [4 <./img/2DColor.PNG>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
  [5
 
  <./img/AllFunctionsBP.PNG>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
 
 (./Seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `Seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 4CD0129F8364C230A8878FD87E2DDB9F;623.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
  ) 
 Here is how much of TeX's memory you used:
  9419 strings out of 493029
- 142401 string characters out of 6136235
- 240849 words of memory out of 5000000
+ 142377 string characters out of 6136235
+ 240837 words of memory out of 5000000
  12784 multiletter control sequences out of 15000+600000
  110752 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,77p,374b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,77p,374b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1185,7 +1182,7 @@ msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 live/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Seminar.pdf (5 pages, 2366603 bytes).
+Output written on Seminar.pdf (5 pages, 2366479 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams

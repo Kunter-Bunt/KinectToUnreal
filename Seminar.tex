@@ -66,9 +66,9 @@
 
 \section{Microsoft Kinect}
 	Die Kinect wurde ursprünglich von Microsoft für die Xbox 360 entwickelt bietet eine Farbkamera, einen Infrarotprojektor, eine Infrarotkamera und mehrere Mikrofone, sie wurde Ende 2010 veröffentlicht (siehe Abb. \ref{Kinectv2}). \\
-	Gut ein Jahr später veröffentlichte Microsoft aber ein \textit{Software Development Kit}, zusammen mit einem Adapter kann man unter Windows Applikationen entwickeln, die die Kinect nutzen.\\
+	Gut ein Jahr später veröffentlichte Microsoft ein \textit{Software Development Kit}, zusammen mit einem Adapter kann man unter Windows Applikationen entwickeln, die die Kinect nutzen.\\
 	Als Einschränkung gilt aber jederzeit, dass der Treiber nur eine Kinect pro Rechner verarbeitet.\\
-	Wichtig für diese Arbeit ist, dass Infrarotprojektor und Infrarotkamer zusammen einen Tiefensensor bilden. \\
+	Wichtig für diese Arbeit ist, dass Infrarotprojektor und Infrarotkamera zusammen einen Tiefensensor bilden. \\
 	Kombiniert man diesen Tiefensensor und Farbkamera kann man eine Punktwolke erzeugen, dazu müssen die Pixel des Kamerabildes entlang der Tiefeninformation in den dreidimensionalen Raum projeziert werden. \\
 	Die dazugehörige Software ermöglicht noch viele andere Interpretationsarten der gelieferten Bilder, zum Beispiel kann sie ein Knochenmodell von Personen vor der Kamera berechnen, diese können dann in Avatare umgesetzt werden, die die Bewegungen der Personen kopieren.\\
 	Für diese Arbeit wird die Kinect v2.0 verwendet. \\[0.5cm]
@@ -111,7 +111,8 @@
 	Wenn sie gestartet wurde können {\textit{Event Dispatcher}} angelegt werden, an die passende Events gebunden werden. \\
 	Diese liefern bei jedem ankommenden Bild der Kinect ein Ereignis und das Bild als Textur zurück, diese lässt sich gut auf Flächen projezieren, die Projektion auf einzelne Pixel gestaltet sich schwieriger. \\
 	Um das Farbbild hierfür nutzbar zu machen muss die Textur in ein Array mit {\textit{LinearColor}} Werten umgewandelt werden, die Werte des Arrays können dann einzeln ausgelesen und als Pixelfarben gesetzt werden (siehe Abb. \ref{2DColor}). \\
-	Eine Funktion zur Umwandlung stellt der Unreal Editor nicht zur Verfügung, sie muss als C++ Funktion hinzugefügt werden . Ähnliches gilt für die Tiefeninformation, die ebenfalls als Textur kodiert werden. \\
+	Eine Funktion zur Umwandlung stellt der Unreal Editor nicht zur Verfügung, sie muss als C++ Funktion hinzugefügt werden. \\
+	Ähnliches gilt für die Tiefeninformation, die ebenfalls als Textur kodiert werden. \\
 	Sind die Farb- und Tiefeninformationen eines Frames in Arrays verpackt kann man beginnen die Punktwolke zu erzeugen.\\
 	Bei diesem Plugin besteht aber immer das Problem, dass das Plugin direkt mit dem Treiber zusammen arbeitet, es kann also immer nur eine Kinect ausgelesen werden. \\
 	Dies ist im Zusammenhang der Motivation nicht sinnvoll, da mindestens zwei Kameras auf gegenüberliegenden Seiten verwendet werden müssen um ein vollständiges dreidimensionales Modell eines Körpers zu erhalten.\\
@@ -176,7 +177,7 @@ y_2 \\
 y_3
 \end{bmatrix}$\\[1cm]
 
-	Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1',y_2',y_3']^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden [Zitierung Florian] \cite{ITM07_BrunnSawo}.
+	Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1',y_2',y_3']^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden \cite{TEO}.
 	Die Formel lautet \\[1cm]
 
 $\begin{bmatrix}
@@ -244,7 +245,7 @@ y'_3
 	Dabei sollten sie in der C++ Anbindung der UE verarbeitet werden, denn die Verarbeitung ist sehr aufwändig und die Bilder in Blueprints zu verarbeiten führt zu einem Flaschenhals.\\
 	Der Prototyp kann eine Kinect von einem anderen Rechner zu importieren, mehrere gleichzeitig zu verarbeiten dürfte jedoch wegen der verwendeten {\textit{Draw Debug Point}} Funktion problematisch werden. \\
 	Die in der Aufgabenstellung bezeichnete Aufgabe wurde also erfüllt, bezogen auf die Motivation sind aber noch Anpassungen des Prototyps notwendig.\\
-	Um der flüssigen Anzeige eines Körpers in der VR zu genügen muss dieser nämlich von mehreren Kinect von verschiedenen Seiten aufgenommen - und verarbeitet - werden. v
+	Um der flüssigen Anzeige eines Körpers in der VR zu genügen muss dieser nämlich von mehreren Kinect von verschiedenen Seiten aufgenommen - und verarbeitet - werden. \\
 	Die resultierende Größe der Punktwolke ist für diesen Prototyp zu viel, er könnte sie nur wenige Male pro Sekunde zeichnen. \\
 	Hohe Bildraten sind in der virtuellen Realität aber wichtig, damit der Nutzer sich in ihr präsent fühlt und nicht an der Simulatorkrankheit leidet. \\
 	Alle für diese Arbeit implementierten Methoden finden sie noch einmal in Abb. \ref{AllFunctionsBP} aufgelistet.\\[0.5cm]

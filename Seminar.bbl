@@ -1,11 +1,10 @@
 \begin{thebibliography}{1}
 
-\bibitem{ITM07_BrunnSawo}
-Dietrich Brunn, Felix Sawo, and Uwe~D. Hanebeck.
-\newblock {M}odellbasierte {V}ermessung verteilter {P}h{\"a}nomene und
-  {G}enerierung optimaler {M}esssequenzen.
-\newblock {\em tm - Technisches Messen, Oldenbourg Verlag}, 3:75--90, March
-  2007.
+\bibitem{TEO}
+Florian Faion.
+\newblock {\em Tracking Extended Objects in Noisy Point Clouds with Application
+  in Telepresence Systems}.
+\newblock Dissertation, Karlsruhe Institut für Technologie, 2015.
 
 \bibitem{lidar}
 jumi1174.
