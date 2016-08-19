@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  8 AUG 2016 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.3)  19 AUG 2016 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,6 +875,21 @@ is-plays
  []
 
 
+Underfull \hbox (badness 2119) in paragraph at lines 52--59
+\T1/ptm/m/n/10 deut-lich ver-bes-sert. Aber um sich an ei-nem ent-fern-ten
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 52--59
+\T1/ptm/m/n/10 reicht es nicht die Be-we-gung des Nut-zers kor-rekt zu
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 52--59
+\T1/ptm/m/n/10 mög-lich aus den auf-ge-nom-me-nen Bil-dern wie-der ei-ne
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--59
 
  []
@@ -882,6 +897,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--59
 
 Underfull \hbox (badness 3417) in paragraph at lines 62--65
 \T1/ptm/m/n/10 dort soll aus dem Tie-fen-bild und dem Farb-bild ei-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+\T1/ptm/m/n/10 drei-di-men-sio-na-le Punkt-wol-ke er-zeugt wer-den. Da-bei
  []
 
 
@@ -895,6 +915,11 @@ Underfull \hbox (badness 1616) in paragraph at lines 68--75
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 68--75
+\T1/ptm/m/n/10 In-fra-rot-ka-me-ra zu-sam-men einen Tie-fen-sen-sor bil-den.
+ []
+
+
 Underfull \hbox (badness 1502) in paragraph at lines 68--75
 \T1/ptm/m/n/10 man ei-ne Punkt-wol-ke er-zeu-gen, da-zu müs-sen die Pi-xel
  []
@@ -903,12 +928,6 @@ Underfull \hbox (badness 1502) in paragraph at lines 68--75
 Underfull \hbox (badness 2073) in paragraph at lines 68--75
 \T1/ptm/m/n/10 des Ka-me-ra-bil-des ent-lang der Tie-fen-in-for-ma-ti-on in den
 
- []
-
-
-Underfull \hbox (badness 3098) in paragraph at lines 68--75
-\T1/ptm/m/n/10 In-ter-pre-ta-ti-ons-ar-ten der ge-lie-fer-ten Bil-der, zum Bei-
-spiel
  []
 
 
@@ -932,9 +951,8 @@ Underfull \hbox (badness 2443) in paragraph at lines 85--89
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 85--89
-\T1/ptm/m/n/10 Zunächst wird der Ser-ver (\T1/ptm/m/it/10 PCView-er\T1/ptm/m/n/
-10 ) und an-schlie-ÿend
+Underfull \hbox (badness 2478) in paragraph at lines 85--89
+\T1/ptm/m/n/10 ge-st-ar-tet, nun soll-te die Ki-nect im Me-nu des Ser-vers
  []
 
 
@@ -967,18 +985,18 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 104--105
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--120
-\T1/ptm/m/n/10 da min-des-tens zwei Ka-me-ras auf ge-gen-über-lie-gen-den
+Underfull \hbox (badness 2065) in paragraph at lines 110--120
+\T1/ptm/m/n/10 zwei Ka-me-ras auf ge-gen-über-lie-gen-den Sei-ten ver-wen-det
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 110--120
-\T1/ptm/m/n/10 Sei-ten ver-wen-det wer-den müs-sen um ein voll-stän-di-ges
+Underfull \hbox (badness 3579) in paragraph at lines 110--120
+\T1/ptm/m/n/10 wer-den müs-sen um ein voll-stän-di-ges drei-di-men-sio-na-les
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 110--120
-\T1/ptm/m/n/10 Das Plu-gin wur-de dar-auf-hin zu-guns-ten des PCView-ers
+Underfull \hbox (badness 3713) in paragraph at lines 110--120
+\T1/ptm/m/n/10 Mo-dell ei-nes Kör-pers zu er-hal-ten. Das Plu-gin wur-de
  []
 
 
@@ -1001,20 +1019,44 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 123--124
 File: img/Cloud.PNG Graphic file (type png)
  <use img/Cloud.PNG>
 Package pdftex.def Info: img/Cloud.PNG used on input line 130.
-(pdftex.def)             Requested size: 516.0pt x 290.73907pt.
+(pdftex.def)             Requested size: 258.0pt x 145.36537pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 130--131
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+! LaTeX Error: \begin{figure} on input line 128 ended by \end{figure*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 	\end{figure*}
+                    
+? 
 
 Underfull \hbox (badness 1755) in paragraph at lines 136--143
 \T1/ptm/m/n/10 Mit die-sem Sys-tem kön-nen meh-re-re Ki-nects ver-ar-bei-tet
  []
 
 
+Underfull \hbox (badness 1960) in paragraph at lines 136--143
+\T1/ptm/m/n/10 Ober-flä-che be-reits Punkt-wol-ken an-zei-gen, dies wird als
+ []
+
+
 Underfull \hbox (badness 1430) in paragraph at lines 136--143
 \T1/ptm/m/n/10 Das \T1/ptm/m/it/10 e-installation \T1/ptm/m/n/10 Pro-jekt be-nu
 tzt den PCView-er be-reits
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 136--143
+\T1/ptm/m/n/10 die Funk-tio-nen zum Aus-le-sen ei-ner Ki-nect noch nicht
  []
 
 
@@ -1072,12 +1114,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
  []
 
-[3 <./img/Cloud.PNG>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 200--212
 
  []
 
-<img/2DColor.PNG, id=106, 729.47531pt x 426.09187pt>
+<img/2DColor.PNG, id=91, 729.47531pt x 426.09187pt>
 File: img/2DColor.PNG Graphic file (type png)
  <use img/2DColor.PNG>
 Package pdftex.def Info: img/2DColor.PNG used on input line 215.
@@ -1088,13 +1130,17 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 215--216
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 223--239
-\T1/ptm/m/n/10 zu Punk-ten meh-re-re Ober-flä-chen die ge-ren-dert wer-den
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 223--239
+\T1/ptm/m/n/10 Zei-chen-ope-ra-tio-nen zu spa-ren. Dies hebt die an-zeig-ba-re
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 223--239
-\T1/ptm/m/n/10 über-le-gen, die Par-tic-les mit kol-lek-ti-ver Kon-trol-le die
+Underfull \hbox (badness 1824) in paragraph at lines 223--239
+\T1/ptm/m/n/10 meh-re-rer Ki-nect eig-nen, al-ler-dings wer-den die Par-tic-les
+
  []
 
 
@@ -1102,7 +1148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--239
 
  []
 
-
+[3 <./img/Cloud.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 244--252
 []\T1/ptm/m/n/10 Die für die-se Aus-ar-bei-tung an-ge-fer-tig-te Pro-to-typ
  []
@@ -1113,23 +1159,8 @@ Underfull \hbox (badness 2626) in paragraph at lines 244--252
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 244--252
-\T1/ptm/m/n/10 wer-den, denn die Ver-ar-bei-tung ist sehr auf-wän-dig und
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 244--252
-\T1/ptm/m/n/10 die Bil-der in Blue-prints zu ver-ar-bei-ten führt zu ei-nem
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 244--252
-\T1/ptm/m/n/10 ver-schie-de-nen Sei-ten auf-ge-nom-men - und ver-ar-bei-tet -
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 244--252
-\T1/ptm/m/n/10 Die re-sul-tie-ren-de Grö-ÿe der Punkt-wol-ke ist für die-sen
+Underfull \hbox (badness 3068) in paragraph at lines 244--252
+\T1/ptm/m/n/10 Mo-ti-va-ti-on sind aber noch An-pas-sun-gen des Pro-to-typs
  []
 
 
@@ -1147,11 +1178,9 @@ Package pdftex.def Info: img/AllFunctionsBP.PNG used on input line 255.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./Seminar.bbl [4 <./img/2DColor.PNG>])
+(./Seminar.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
- [5
-
- <./img/AllFunctionsBP.PNG>]
+ [4 <./img/2DColor.PNG>] [5 <./img/AllFunctionsBP.PNG>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
 
 (./Seminar.aux)
@@ -1164,11 +1193,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
 Here is how much of TeX's memory you used:
  9419 strings out of 493029
  142377 string characters out of 6136235
- 240837 words of memory out of 5000000
+ 243837 words of memory out of 5000000
  12784 multiletter control sequences out of 15000+600000
  110752 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,77p,374b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,77p,374b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1182,7 +1211,7 @@ msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 live/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Seminar.pdf (5 pages, 2366479 bytes).
+Output written on Seminar.pdf (5 pages, 2366577 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams
