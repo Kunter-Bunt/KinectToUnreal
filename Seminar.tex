@@ -56,6 +56,9 @@
 	Optische Systeme zur Erkennung, wie etwa die Microsoft Kinect, sind nach einer einmaligen Kalibrierung deutlich schneller einsatzbereit. 
 	Dabei ist es möglich aus den aufgenommenen Bildern wieder eine dreidimensionale Punktwolke erzeugt werden und so den Nutzer in der virtuellen Welt darzustellen. \\
 	Werden die Brille und die Punktwolke der Kinect korrekt aufeinander abgestimmt sollte der Nutzer danach in der Lage sein sich selbst in der virtuellen Welt zu sehen.\\
+	
+\section{Aufbau der Arbeit}
+	Zunächst wird die zu bearbeitende Aufgabe definiert, anschließend wird die verwendete Hardware, eine Microsoft Kinect v2.0, vorgestellt. Dann werden zwei Ansätze zur Integration in die Unreal Engine diskutiert: Erst das Kinect 4 Windows Plugin und danach der PCViewer, der für die Bearbeitung der Aufgabenstellung verwendet wird. Nun wird die Projektion der Kamerabilder in den dreidimensionalen Raum und das Zeichnen der Punktwolke erörtert. Abschließend wird ein Fazit gezogen.
 
 
 \section{Aufgabenstellung}
@@ -63,22 +66,22 @@
 	Dabei beschränkt sich diese Arbeit auf eine Kinect. \\
 	Dies dient als Vorbereitung für die in der Einleitung motivierte Übertragung des menschlichen Körpers in die virtuelle Welt. \\
 
-
-\section{Microsoft Kinect}
-	Die Kinect wurde ursprünglich von Microsoft für die Xbox 360 entwickelt bietet eine Farbkamera, einen Infrarotprojektor, eine Infrarotkamera und mehrere Mikrofone, sie wurde Ende 2010 veröffentlicht (siehe Abb. \ref{Kinectv2}). \\
-	Gut ein Jahr später veröffentlichte Microsoft ein \textit{Software Development Kit}, zusammen mit einem Adapter kann man unter Windows Applikationen entwickeln, die die Kinect nutzen.
-	Als Einschränkung gilt aber jederzeit, dass der Treiber nur eine Kinect pro Rechner verarbeitet.\\
-	Wichtig für diese Arbeit ist, dass Infrarotprojektor und Infrarotkamera zusammen einen Tiefensensor bilden. 
-	Kombiniert man diesen Tiefensensor und Farbkamera kann man eine Punktwolke erzeugen, dazu müssen die Pixel des Kamerabildes entlang der Tiefeninformation in den dreidimensionalen Raum projeziert werden. 
-	Die dazugehörige Software ermöglicht noch viele andere Interpretationsarten der gelieferten Bilder, zum Beispiel kann sie ein Knochenmodell von Personen vor der Kamera berechnen, diese können dann in Avatare umgesetzt werden, die die Bewegungen der Personen kopieren.
-	Für diese Arbeit wird die Kinect v2.0 verwendet. \\[0.5cm]
-	
-	\begin{figure}[!h]
+\begin{figure}[!h]
     	\centering
 		\includegraphics[width=0.5\textwidth]{img/Kinectv2}
 	    \caption{Microsoft Kinect v2.0, Farbkamera und Tiefensensor können zur Erzeugung einer Punktwolke verwendet werden. {\cite{kinectpic}}}
     	\label{Kinectv2}
 	\end{figure}
+	
+\section{Microsoft Kinect}
+	Die Kinect wurde ursprünglich von Microsoft für die Xbox 360 entwickelt bietet eine Farbkamera, einen Infrarotprojektor, eine Infrarotkamera und mehrere Mikrofone, sie wurde Ende 2010 veröffentlicht (siehe Abb. \ref{Kinectv2}). \\
+	Gut ein Jahr später veröffentlichte Microsoft ein \textit{Software Development Kit}, zusammen mit einem Adapter kann man unter Windows Applikationen entwickeln, die die Kinect nutzen.
+	Als Einschränkung gilt aber jederzeit, dass der Treiber nur eine Kinect pro Rechner verarbeitet: "{}Kinect for Windows supports one sensor, which is called the default sensor"{} {\cite{kinectone}}.\\
+	Wichtig für diese Arbeit ist, dass Infrarotprojektor und Infrarotkamera zusammen einen Tiefensensor bilden. 
+	Kombiniert man diesen Tiefensensor und Farbkamera kann man eine Punktwolke erzeugen, dazu müssen die Pixel des Kamerabildes entlang der Tiefeninformation in den dreidimensionalen Raum projeziert werden. 
+	Die dazugehörige Software ermöglicht noch viele andere Interpretationsarten der gelieferten Bilder, zum Beispiel kann sie ein Knochenmodell von Personen vor der Kamera berechnen, diese können dann in Avatare umgesetzt werden, die die Bewegungen der Personen kopieren.
+	Für diese Arbeit wird die Kinect v2.0 verwendet. \\[0.5cm]
+	
 	
 	
 \section{Kinect 4 Windows v2.0 Plugin}
@@ -92,12 +95,6 @@
 	Zunächst klont man das GitHub Projekt KinectDemoRoom {\cite{k4w}}. 
 	Nach einem Rechtsklick auf die .uprojekt Datei muss zunächst die Version 4.9 der Unreal Engine ausgewählt werden, danach können im selben Menu die Projektdateien erstellt und eigentlich auch kompilliert werden, letzteres schlägt aber fehl und es muss ein Kompilerfehler von Hand behoben werden. \\
 	Dazu muss muss das Projekt in Visual Studio geöffnet werden (.sln Datei) und  im {\textit{KinectV2Module}} für die {\textit{PrivateDependencyModuleNames}} und {\textit{PublicDependencyModuleNames}} der Eintrag {\textit{"{}UnrealEd"{}}} hinzugefügt werden, weiteres zu dem Problem ist in den Issues {\cite{k4wissues}} zu finden.\\
-
-\section{Die Demo Umgebung}
-	Nachdem die Projektmappe erfolgreich erstellt wurde sollte sich die .uproject Datei öffnen lassen und der Unreal Editor startet. \\
-	Die Demo Umgebung besteht aus mehreren kleinen Räumen, die die Grundfunktionalität des Plugins präsentieren. 
-	Dazu gehört das Auslesen der Input Streams wie Farbe, Tiefe und Infrarot (Abb. \ref{Kinect4Windows}), außerdem trennt der {\textit{Body ID}} Stream Personen vom Hintergrund und das {\textit{Bone Model}} zeigt eine visuelle Repräsentation des berechneten Knochenmodells. \\
-	Eine Implementierung für die Darstellung einer Punktwolke ist noch nicht vorhanden. \\[0.5cm]
 	
 	\begin{figure}[!h]
     	\centering
@@ -106,9 +103,13 @@
     	\label{Kinect4Windows}
 	\end{figure}
 
+
 \section{Blueprint}
+	Nachdem die Projektmappe erfolgreich erstellt wurde sollte sich die .uproject Datei öffnen lassen und der Unreal Editor startet.
 	Zu Spielbeginn muss zunächst die Kinect gestartet werden, wichtig ist auch sie bei Spielende wieder abzuschalten, sonst läuft sie die ganze Zeit. 
-	Wenn sie gestartet wurde können {\textit{Event Dispatcher}} angelegt werden, an die passende Events gebunden werden. 
+	Die Grundfunktionalität des Plugins beinhaltet das Auslesen der Input Streams wie Farbe, Tiefe und Infrarot (Abb. \ref{Kinect4Windows}).
+	Eine Implementierung für die Berechnung und Darstellung einer Punktwolke ist noch nicht integriert.
+	Um die Input Streams zu erhalten können {\textit{Event Dispatcher}} angelegt werden, an die passende Events gebunden werden. 
 	Diese liefern bei jedem ankommenden Bild der Kinect ein Ereignis und das Bild als Textur zurück, diese lässt sich gut auf Flächen projezieren, die Projektion auf einzelne Pixel gestaltet sich schwieriger. \\
 	Um das Farbbild hierfür nutzbar zu machen muss die Textur in ein Array mit {\textit{LinearColor}} Werten umgewandelt werden, die Werte des Arrays können dann einzeln ausgelesen und als Pixelfarben gesetzt werden (siehe Abb. \ref{2DColor}). 
 	Eine Funktion zur Umwandlung stellt der Unreal Editor nicht zur Verfügung, sie muss als C++ Funktion hinzugefügt werden. 
@@ -125,15 +126,10 @@
     	\label{CloudPCViewer}
 	\end{figure}
 	
-		\begin{figure}[!h]
-    	\centering
-		\includegraphics[width=0.5\textwidth]{img/Cloud}
-	    \caption{Das Ergebnis der Integration einer Punktwolke in die Unreal Engine.}
-    	\label{Cloud}
-	\end{figure} 
+
 
 \section{PCViewer}
-	Der {\textit{PCViewer}} ist eine Applikation des Isas, sie spaltet sich in einen Client und einen Server. 
+	Der {\textit{PCViewer}} ist eine Applikation des ISAS, sie spaltet sich in einen Client und einen Server. 
 	Ein Client kann die Bilder der Kinect auslesen und diese über das Netzwerk an den Server verschicken. 
 	Der Server empfängt die Daten und kann diese auch für andere Anwendungen bereitstellen.\\
 	Mit diesem System können mehrere Kinects verarbeitet werden, dabei muss natürlich nach wie vor jede Kinect an einen eigenen Rechner angeschlossen werden, aber nun besteht die Möglichkeit, alle auf einem zentralen Rechner zu nutzen.
@@ -141,23 +137,48 @@
 	Das {\textit{e-installation}} Projekt benutzt den PCViewer bereits in Kombination mit der Unreal Engine, allerdings um das verwendete {\textit{head-mounted display}} auszulesen. 
 	Deshalb sind die Funktionen zum Auslesen einer Kinect noch nicht implementiert, sie müssen genauso wie die Berechnung der Punktwolke hinzugefügt werden. \\[0.5cm]
 	
+		\begin{figure}[!h]
+    	\centering
+		\includegraphics[width=0.5\textwidth]{img/Cloud}
+	    \caption{Das Ergebnis der Integration einer Punktwolke in die Unreal Engine.}
+    	\label{Cloud}
+	\end{figure} 
 
+\section{Funktionen}
+	Wie bereits im vorigen Abschnitt beschrieben fehlen der Unreal Engine Schnittstelle des PCViewers noch einige Funktionen zum Auslesen der Kinect Streams. 
+	Das eigentliche Auslesen ist dabei trivial, weil man nur den PCViewer anweisen muss das jeweilige Bild in einem gegebenen Puffer zur Verfügung zu stellen. 
+	Um die Farb- und Tiefenbilder dann aber für die Unreal Engine nutzbar zu machen, müssen sie in TArrays gespeichert werden und die Datentypen in solche umgewandelt werden, die die Unreal Engine verarbeiten kann. \\
+	So muss zum Beispiel ein Puffer mit einem Farbbild durchlaufen werden und immer drei uint8 (RGB-)Werte zum einer Linear Color komponiert und dem TArray angehängt werden.
+	Die für die Transformation in den dreidimensionalen wichtige intrinsche und extrinsische Kameramatrix wird auf die selbe Weise ausgelesen und in eine ITransform umgewandelt. \\
+	Die Berechnung der Position der Punktwolke mit dem Tiefenbild und den Kameramatrizen wird im folgenden Abschnitt {\ref{projektion}} beschrieben, anschließend beschäftigt sich Abschnitt {\ref{zeichnen}} mit der Darstellung der Punktwolke. \\
+	Alle implementierten Funktionen sind in Abbildung \ref{AllFunctionsBP} aufgeführt.\\[0.5cm]
+	
+	\begin{figure}[!h]
+    	\centering
+		\includegraphics[width=0.5\textwidth]{img/Functions}
+	    \caption{Die für den Prototypen entwickelten Funktionen. {\textit{Get Extrinsic}} wurde bereits vom {\textit{e-installation}} Projekt implementiert.}
+    	\label{AllFunctionsBP}
+	\end{figure}
 
 
 \section{Projektion in den dreidimensionalen Raum}
+\label{projektion}
 	Während die Kameras der Kinect einen konischen Bereich aus der Welt aufzeichnen, bilden sie diesen natürlich auf ein zweidimensionales Bild ab. 
 	Dabei wird jeder dreidimensionale Punkt $[y_1,y_2,y_3]^T$ mit der intrinsischen Kamera-Matrix \\ [1cm]
 
+\begin{center}
 $I = \begin{bmatrix}
 f_u & 0 & c_u  \\
 0 & f_v & c_v  \\
 0 & 0 & 1  
 \end{bmatrix}$\\[1cm]
+\end{center}
 
 	in ein einen zweidimensionalen Pixel und eine Tiefe $[u,v,1]^T \times \gamma$ transformiert. 
 	Dabei bezeichnen $f_u$ und $f_v$ die Fokuslänge und $c_u$ und $c_v$ den Hauptpunkt. 
 	Ein Punkt des Tiefenbildes berechnet sich also aus \\[1cm]
 
+\begin{center}
 $\begin{bmatrix}
 u \\
 v \\
@@ -176,10 +197,12 @@ y_1 \\
 y_2 \\
 y_3
 \end{bmatrix}$\\[1cm]
+\end{center}
 
 	Für die Projektion in den dreidimensionalen Raum der virtuellen Realität muss mit $[y_1',y_2',y_3']^T = I^{-1} \times [u,v,1]^T \times \gamma$ aus jedem Punkt des Tiefenbildes und dem Inversen der intrinsischen Kamera-Matrix ein Punkt im dreidimensionalen Raum berechnet werden \cite{TEO}.
 	Die Formel lautet \\[1cm]
 
+\begin{center}
 $\begin{bmatrix}
 y'_1 \\
 y'_2 \\
@@ -192,11 +215,13 @@ y'_3
 \end{bmatrix}
 \times
 \gamma$.\\[1cm]
+\end{center}
 
 	Der berechnete Punkt ist relativ zum Ursprung. 
 	Wenn nur eine Kinect benutzt wird ist dies kein Problem, man verschiebt einfach den Ursprung in der Unreal Engine um die Punktwolke an die gewüschnte Position zu bekommen. 
 	Sollen aber mehrere Kinects zum Einsatz kommen müssen die Kameras in Position und Rotation koordiniert werden, dazu kann die extrinsische Matrix $E$ definiert werden. \\[1cm]
 
+\begin{center}
 $\begin{bmatrix}
 y_1 \\
 y_2 \\
@@ -209,6 +234,7 @@ y'_1 \\
 y'_2 \\
 y'_3
 \end{bmatrix}$\\[1cm]
+\end{center}
 
 \begin{figure}[!h]
     	\centering
@@ -220,6 +246,7 @@ y'_3
 
 
 \section{Zeichenfunktionen}
+\label{zeichnen}
 	Nach der Berechnung der Positionen muss nur noch ein Punkt an jede davon gezeichnet werden. 
 	Die Unreal Engine bietet mit {\textit{Draw Debug Point}} eine einfache Methode um farbige Punkte an festgelegte dreidimensionale Positionen zu zeichnen, leider ist sie eher für sporadische und nicht für massenhafte Verwendung ausgelegt. \\
 	Auf dem Referenzrechner werden nur wenige Millionen Punkte pro Sekunde gezeichnet. 
@@ -235,27 +262,21 @@ y'_3
 	Allerdings besitzen dreidimensionale Objekte im Gegensatz zu Punkten mehrere Oberflächen die gerendert werden müssen, dies frisst die Vorteile wieder auf.\\
 	{\textit{Particles}} in einem {\textit{Particle System}} können sehr performant erzeugt werden. 
 	Sie sollten sich auch für die Darstellung mehrerer Kinect eignen, allerdings werden die Particles kollektiv kontrolliert und nicht einzeln gesetzt. 
-	Um sie also zu nutzen, müsste man sich eine Methode überlegen, die Particles mit kollektiver Kontrolle die Punktwolke bilden zu lassen und sie in den richtigen Farben darzustellen. \\[0.5cm]
+	Um sie also zu nutzen müsste man sich eine Methode überlegen die Particles mit kollektiver Kontrolle die Punktwolke bilden zu lassen und sie in den richtigen Farben darzustellen. \\[0.5cm]
 	
 	
 
 
 \section{Fazit}
-	Die für diese Ausarbeitung angefertigte Prototyp Anwendung zeigt exemplarisch, dass es möglich ist Kinect Streams in die Unreal Engine zu importieren und zu verarbeiten.
+	Der für diese Ausarbeitung angefertigte Prototyp Anwendung zeigt exemplarisch, dass es möglich ist Kinect Streams in die Unreal Engine zu importieren und zu verarbeiten.
 	Dabei sollten sie in der C++ Anbindung der UE verarbeitet werden, denn die Verarbeitung ist sehr aufwändig und die Bilder in Blueprints zu verarbeiten führt zu einem Flaschenhals.\\
 	Der Prototyp kann eine Kinect von einem anderen Rechner zu importieren, mehrere gleichzeitig zu verarbeiten dürfte jedoch wegen dem Aufwand der verwendeten {\textit{Draw Debug Point}} Funktion problematisch werden. 
 	Die in der Aufgabenstellung bezeichnete Aufgabe wurde also erfüllt, bezogen auf die Motivation sind aber noch Anpassungen des Prototyps notwendig.
 	Um der flüssigen Anzeige eines Körpers in der VR zu genügen muss dieser nämlich von mehreren Kinect von verschiedenen Seiten aufgenommen - und verarbeitet - werden. 
 	Die resultierende Größe der Punktwolke ist für diesen Prototyp zu viel, er könnte sie nur wenige Male pro Sekunde zeichnen. 
-	Hohe Bildraten sind in der virtuellen Realität aber wichtig, damit der Nutzer sich in ihr präsent fühlt und nicht an der Simulatorkrankheit leidet. \\
-	Alle für diese Arbeit implementierten Methoden finden sie noch einmal in Abb. \ref{AllFunctionsBP} aufgelistet.\\[0.5cm]
+	Hohe Bildraten sind in der virtuellen Realität aber wichtig, damit der Nutzer sich in ihr präsent fühlt und nicht an der Simulatorkrankheit leidet. \\[0.5cm]
 	
-		\begin{figure*}[!h]
-    	\centering
-		\includegraphics[width=0.9\textwidth]{img/AllFunctionsBP}
-	    \caption{Die für den Prototypen entwickelten Funktionen. {\textit{Get Extrinsic}} wurde bereits vom {\textit{e-installation}} Projekt implementiert.}
-    	\label{AllFunctionsBP}
-	\end{figure*}
+
 	
 
 

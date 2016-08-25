@@ -14,6 +14,12 @@ jumi1174.
   2015.
 \newblock [Online; accessed 15-July-2016].
 
+\bibitem{kinectone}
+Microsoft.
+\newblock {Kinect API Overview}.
+\newblock \url{https://msdn.microsoft.com/en-us/library/dn782033.aspx}.
+\newblock [Online; accessed 24-August-2016].
+
 \bibitem{kinectruntime}
 Microsoft.
 \newblock {Kinect for Windows Runtime}.
@@ -27,6 +33,14 @@ Microsoft.
 \newblock \url{https://www.microsoft.com/en-us/download/details.aspx?id=44561},
   2014.
 \newblock [Online; accessed 15-July-2016].
+
+\bibitem{kinectpic}
+peaceloveharmony.
+\newblock {Kinect With Me}.
+\newblock
+  \url{https://blogs.msdn.microsoft.com/cdndevs/2014/10/23/kinect-with-me-part-1-setting-up-your-machine/},
+  2014.
+\newblock [Online; accessed 19-August-2016].
 
 \bibitem{k4w}
 Leon Rosengarten.

@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Seminar.aux
 The style file: plain.bst
 Database file #1: Literatur.bib
-You've used 6 entries,
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            524 strings with 4821 characters,
-and the built_in function-call counts, 1303 in all, are:
-= -- 131
-> -- 42
+            533 strings with 5122 characters,
+and the built_in function-call counts, 1733 in all, are:
+= -- 174
+> -- 56
 < -- 0
-+ -- 18
-- -- 12
-* -- 41
-:= -- 234
-add.period$ -- 23
-call.type$ -- 6
-change.case$ -- 24
++ -- 24
+- -- 16
+* -- 52
+:= -- 307
+add.period$ -- 31
+call.type$ -- 8
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 44
-empty$ -- 125
-format.name$ -- 12
-if$ -- 279
+cite$ -- 8
+duplicate$ -- 58
+empty$ -- 169
+format.name$ -- 16
+if$ -- 374
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 8
 missing$ -- 0
-newline$ -- 38
-num.names$ -- 12
-pop$ -- 44
+newline$ -- 50
+num.names$ -- 16
+pop$ -- 62
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 24
 quote$ -- 0
-skip$ -- 35
+skip$ -- 46
 stack$ -- 0
-substring$ -- 30
-swap$ -- 6
+substring$ -- 40
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
+type$ -- 32
 warning$ -- 0
-while$ -- 12
-width$ -- 7
-write$ -- 73
+while$ -- 16
+width$ -- 9
+write$ -- 96
