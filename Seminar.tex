@@ -147,8 +147,8 @@
 \section{Funktionen}
 	Wie bereits im vorigen Abschnitt beschrieben fehlen der Unreal Engine Schnittstelle des PCViewers noch einige Funktionen zum Auslesen der Kinect Streams. 
 	Das eigentliche Auslesen ist dabei trivial, weil man nur den PCViewer anweisen muss das jeweilige Bild in einem gegebenen Puffer zur Verfügung zu stellen. 
-	Um die Farb- und Tiefenbilder dann aber für die Unreal Engine nutzbar zu machen, müssen sie in TArrays gespeichert werden und die Datentypen in solche umgewandelt werden, die die Unreal Engine verarbeiten kann. \\
-	So muss zum Beispiel ein Puffer mit einem Farbbild durchlaufen werden und immer drei uint8 (RGB-)Werte zum einer Linear Color komponiert und dem TArray angehängt werden.
+	Um die Farb- und Tiefenbilder dann aber für die Unreal Engine nutzbar zu machen, müssen sie in {\textit{TArrays}} gespeichert werden und die Datentypen in solche umgewandelt werden, die die Unreal Engine verarbeiten kann. \\
+	So muss zum Beispiel ein Puffer mit einem Farbbild durchlaufen werden und immer drei uint8 (RGB-)Werte zum einer {\textit{LinearColor}} komponiert und dem {\textit{TArray}} angehängt werden.
 	Die für die Transformation in den dreidimensionalen wichtige intrinsche und extrinsische Kameramatrix wird auf die selbe Weise ausgelesen und in eine ITransform umgewandelt. \\
 	Die Berechnung der Position der Punktwolke mit dem Tiefenbild und den Kameramatrizen wird im folgenden Abschnitt {\ref{projektion}} beschrieben, anschließend beschäftigt sich Abschnitt {\ref{zeichnen}} mit der Darstellung der Punktwolke. \\
 	Alle implementierten Funktionen sind in Abbildung \ref{AllFunctionsBP} aufgeführt.\\[0.5cm]
